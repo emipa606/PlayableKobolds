@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~ Childhood ~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Typical -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldTypical</defName>
+    <title>kobold</title>
+    <titleShort>kobold</titleShort>
+    <baseDescription>NAME was an unremarkable little kobold, good at the unremarkable things a kobold would be.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+  </AlienRace.BackstoryDef>
+  <!-- Miner -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldMiner</defName>
+    <title>Kobold miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>NAME lives to dig, wanting nothing more than to be elbow-deep in minerals and filth as a child.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Ascetic</defName>
+      </li>
+    </forcedTraits>
+    <workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>
+  <!-- Fiddler -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldFiddler</defName>
+    <title>Kobold fiddler</title>
+    <titleShort>Fiddler</titleShort>
+    <baseDescription>NAME has always loved to fiddle with mechanisms and contraptions, some of them even useful!</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  <!-- Scrapper -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldScrapper</defName>
+    <title>Kobold scrapper</title>
+    <titleShort>Scrapper</titleShort>
+    <baseDescription>NAME was forever fighting as a child; meant for greatness or inglorious death, but never without pocket sand.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Brawler</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~ Adulthood ~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- Warrior -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldWarrior</defName>
+    <title>Kobold warrior</title>
+    <titleShort>Warrior</titleShort>
+    <baseDescription>NAME, as one of the less craven of HIS kin, lived to fight on their behalf. Or was forced to.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  <!-- Tinkerer -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldTinkerer</defName>
+    <title>Kobold tinkerer</title>
+    <titleShort>Tinkerer</titleShort>
+    <baseDescription>NAME found their calling in making the many traps and widgets their clan enjoyed so much.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Crafting</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Construction</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Industriousness</defName>
+        <degree>2</degree>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  <!-- Sage -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldSage</defName>
+    <title>Kobold sage</title>
+    <titleShort>Sage</titleShort>
+    <baseDescription>NAME is honored among their clan for their sage counsel, though that could be due to their uselessness in more practical things.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Kind</defName>
+      </li>
+      <li>
+        <defName>Wimp</defName>
+      </li>
+    </forcedTraits>
+    <workDisables>
+      <li>Violent</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>
+  <!-- Inventor -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldInventor</defName>
+    <title>Kobold inventor</title>
+    <titleShort>Inventor</titleShort>
+    <baseDescription>NAME is among the smartest of the kobolds, leading them to a better future whether they appreciate it or not.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>7</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>AnnoyingVoice</defName>
+      </li>
+      <li>
+        <defName>TooSmart</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  <!-- Maverick -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldMaverick</defName>
+    <title>Kobold maverick</title>
+    <titleShort>Maverick</titleShort>
+    <baseDescription>NAME isn't one to be told what to do. Or how to do it. Or when to do it...\n\nOr not to do it at all because it's dangerously unhelpful!</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>SpeedOffset</defName>
+        <degree>2</degree>
+      </li>
+      <li>
+        <defName>ShootingAccuracy</defName>
+        <degree>-1</degree>
+      </li>
+      <li>
+        <defName>Pyromaniac</defName>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  <!-- Miner -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldAdultMiner</defName>
+    <title>Kobold miner</title>
+    <titleShort>Miner</titleShort>
+    <baseDescription>NAME is one of the hard-working kobolds who spends their lives digging for the good of all.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Mining</defName>
+        <amount>5</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Industriousness</defName>
+        <degree>1</degree>
+      </li>
+    </forcedTraits>
+    <workDisables>
+      <li>Intellectual</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>
+  <!-- Artisan -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldArtisan</defName>
+    <title>Kobold artisan</title>
+    <titleShort>Artisan</titleShort>
+    <baseDescription>NAME earned their place in the clan by being a crafter of many things, from sturdy shacks to what a kobold might consider art.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Construction</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Crafting</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Industriousness</defName>
+        <degree>1</degree>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  <!-- Shaman -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldShaman</defName>
+    <title>Kobold shaman</title>
+    <titleShort>Shaman</titleShort>
+    <baseDescription>NAME is a spiritual leader among kobolds, capable in healing herbs and a reassuring chat.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Plants</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Medicine</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Kind</defName>
+      </li>
+      <li>
+        <defName>DrugDesire</defName>
+        <degree>1</degree>
+      </li>
+    </forcedTraits>
+  </AlienRace.BackstoryDef>
+  <!-- Assassin -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldAssassin</defName>
+    <title>Kobold assassin</title>
+    <titleShort>Assassin</titleShort>
+    <baseDescription>When kobold diplomacy failed, NAME was the one the clan's enemies would learn to fear; killing with loud, messy efficiency.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>4</amount>
+      </li>
+      <li>
+        <defName>Shooting</defName>
+        <amount>6</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>ShootingAccuracy</defName>
+        <degree>1</degree>
+      </li>
+      <li>
+        <defName>Psychopath</defName>
+      </li>
+      <li>
+        <defName>Cannibal</defName>
+      </li>
+    </forcedTraits>
+    <workDisables>
+      <li>Caring</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>
+  <!-- Dragonkin -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldDragonkin</defName>
+    <title>Kobold dragonkin</title>
+    <titleShort>Dragonkin</titleShort>
+    <baseDescription>NAME ascended to greatness among kobold-kind. Molded to be as much dragon as 'bold, they fight with ferocity and their mind is always fixed on higher things.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Melee</defName>
+        <amount>7</amount>
+      </li>
+      <li>
+        <defName>Intellectual</defName>
+        <amount>4</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+    <forcedTraits>
+      <li>
+        <defName>Greedy</defName>
+      </li>
+    </forcedTraits>
+    <workDisables>
+      <li>Crafting</li>
+      <li>Caring</li>
+      <li>ManualDumb</li>
+      <li>Animals</li>
+    </workDisables>
+  </AlienRace.BackstoryDef>
+  <!-- Chef -->
+  <AlienRace.BackstoryDef>
+    <defName>KoboldChef</defName>
+    <title>Kobold chef</title>
+    <titleShort>Chef</titleShort>
+    <baseDescription>NAME prepares food for the clan; what they lack in taste they make up for in enthusiasm.</baseDescription>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Cooking</defName>
+        <amount>5</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>2</amount>
+      </li>
+    </skillGains>
+    <spawnCategories>
+      <li>kobold</li>
+      <li>koboldfighter</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+</Defs>
