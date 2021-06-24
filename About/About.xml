@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Playable Kobolds (Continued)</name>
   <packageId>Mlie.PlayableKobolds</packageId>
@@ -20,23 +20,44 @@
   <loadAfter>
     <li>erdelf.HumanoidAlienRaces</li>
   </loadAfter>
-  <description>Update of Mozs mod
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Mozs mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=947429973
 
-[img]https://i.imgur.com/wtwHAQu.png[/img]
+- Added empire goodwill patch
 
-Support-chat:
-https://invite.gg/mlie
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-Non-steam version:
-https://github.com/emipa606/PlayableKobolds
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/PlayableKobolds][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
 This mod adds a playable kobold race into the game, including a new scenario where the player starts the game with a kobold colony of their own.
 
 Kobolds are a medieval-tech-level faction with a set of unique backgrounds for its members. In addition to a playable kobold faction, the mod also adds two NPC kobold factions to the game; one raiders and one friendlies.
 
 This mod is based on the Humanoid Alien Races 2.0 mod, which must be installed and loaded first in order to work.
 
-Original kobold art belongs to twitch.tv/distractedelf</description>
+Original kobold art belongs to twitch.tv/distractedelf
+
+EPOE Patch (Not 1.0 compatible) - http://steamcommunity.com/sharedfiles/filedetails/?id=961215905
+RBSE Patch (Not 1.0 compatible) - http://steamcommunity.com/sharedfiles/filedetails/?id=1086193654
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

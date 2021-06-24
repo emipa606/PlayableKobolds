@@ -32,7 +32,7 @@
                 <options>
                   <li>
                     <weight>100</weight>
-                    <only>RGBA(1.0,1.0,1.0,1)</only>
+                    <only>RGBA(0.8,0,0.1,1)</only>
                   </li>
                 </options>
               </first>
@@ -42,6 +42,7 @@
         </alienPartGenerator>
         <chemicalSettings>
         </chemicalSettings>
+        <humanRecipeImport>true</humanRecipeImport>
       </generalSettings>
       <graphicPaths>
         <li>
@@ -152,25 +153,25 @@
         <li>OrganicStandard</li>
       </hediffGiverSets>
     </race>
-    <recipes>
-      <li>InstallPowerClaw</li>
-      <li>InstallBionicEye</li>
-      <li>InstallBionicArm</li>
-      <li>InstallBionicLeg</li>
-      <li>InstallSimpleProstheticArm</li>
-      <li>InstallSimpleProstheticLeg</li>
-      <li>InstallPegLeg</li>
-      <li>InstallDenture</li>
-      <li>InstallJoywire</li>
-      <li>InstallPainstopper</li>
-      <li>InstallNaturalHeart</li>
-      <li>InstallNaturalLung</li>
-      <li>InstallNaturalKidney</li>
-      <li>InstallNaturalLiver</li>
-      <li>ExciseCarcinoma</li>
-      <li>RemoveBodyPart</li>
-      <li>Euthanize</li>
-    </recipes>
+    <!-- <recipes> -->
+    <!-- <li>InstallPowerClaw</li> -->
+    <!-- <li>InstallBionicEye</li> -->
+    <!-- <li>InstallBionicArm</li> -->
+    <!-- <li>InstallBionicLeg</li> -->
+    <!-- <li>InstallSimpleProstheticArm</li> -->
+    <!-- <li>InstallSimpleProstheticLeg</li> -->
+    <!-- <li>InstallPegLeg</li> -->
+    <!-- <li>InstallDenture</li> -->
+    <!-- <li>InstallJoywire</li> -->
+    <!-- <li>InstallPainstopper</li> -->
+    <!-- <li>InstallNaturalHeart</li> -->
+    <!-- <li>InstallNaturalLung</li> -->
+    <!-- <li>InstallNaturalKidney</li> -->
+    <!-- <li>InstallNaturalLiver</li> -->
+    <!-- <li>ExciseCarcinoma</li> -->
+    <!-- <li>RemoveBodyPart</li> -->
+    <!-- <li>Euthanize</li> -->
+    <!-- </recipes> -->
   </AlienRace.ThingDef_AlienRace>
   <!-- ========================== Leather ========================= -->
   <ThingDef ParentName="LeatherBase">
