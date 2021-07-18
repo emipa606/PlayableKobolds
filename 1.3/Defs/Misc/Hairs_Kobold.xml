@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HairDef>
+    <defName>Kobold_Hair_Blank</defName>
+    <label>no hair</label>
+    <hairGender>Any</hairGender>
+    <texPath>Kobold/Hair/HairBlank</texPath>
+    <hairTags>
+      <li>KoboldHair</li>
+    </hairTags>
+  </HairDef>
+</Defs>

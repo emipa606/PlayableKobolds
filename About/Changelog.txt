@@ -1,5 +1,8 @@
 # Changelog for PlayableKobolds
 
+1.0.2.0 - Mod updated for 1.3 and passed autotests
+
+
 1.0.1.0 - Fixed hand-color, should now use all possible surgeries
 
 
