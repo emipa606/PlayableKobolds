@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>KoboldHorde</defName>
+    <label>kobold horde</label>
+    <description>A loose gathering of kobolds, out to survive and find a dragon to lead them.</description>
+    <pawnsPlural>kobolds</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <settlementGenerationWeight>0.4</settlementGenerationWeight>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(40, 3)</li>
+        <li>(400, 1)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>big dragon</leaderTitle>
+    <settlementTexturePath>World/WorldObjects/FriendlyKoboldBaseS</settlementTexturePath>
+    <factionIconPath>World/WorldObjects/FriendlyKoboldBaseL</factionIconPath>
+    <colorSpectrum>
+      <li>(0.9, 1.0, 0.9)</li>
+      <li>(0.8, 0.9, 0.8)</li>
+    </colorSpectrum>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+      <li>kobold</li>
+    </backstoryCategories>
+    <allowedCultures>
+      <li>Corunan</li>
+    </allowedCultures>
+    <visitorTraderKinds>
+      <li>Visitor_Kobold_Standard</li>
+    </visitorTraderKinds>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-50</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <KoboldFighter>100</KoboldFighter>
+          <KoboldHunter>15</KoboldHunter>
+          <KoboldGunner>8</KoboldGunner>
+          <KoboldKing>1</KoboldKing>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <KoboldFighter>100</KoboldFighter>
+          <KoboldKing>1</KoboldKing>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <KoboldColonist>1</KoboldColonist>
+        </traders>
+        <carriers>
+          <Muffalo>2</Muffalo>
+          <Dromedary>2</Dromedary>
+        </carriers>
+        <guards>
+          <KoboldFighter>30</KoboldFighter>
+          <KoboldHunter>15</KoboldHunter>
+          <KoboldGunner>8</KoboldGunner>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <KoboldFighter>60</KoboldFighter>
+          <KoboldColonist>50</KoboldColonist>
+          <KoboldHunter>20</KoboldHunter>
+          <KoboldGunner>15</KoboldGunner>
+          <KoboldKing>1</KoboldKing>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  <FactionDef ParentName="FactionBase">
+    <defName>KoboldOnslaught</defName>
+    <label>kobold onslaught</label>
+    <description>A band of cut-throat kobolds, out for shinies and chaos.</description>
+    <pawnsPlural>kobolds</pawnsPlural>
+    <settlementGenerationWeight>0.6</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>big dragon</leaderTitle>
+    <settlementTexturePath>World/WorldObjects/RaiderKoboldBaseS</settlementTexturePath>
+    <factionIconPath>World/WorldObjects/RaiderKoboldBaseL</factionIconPath>
+    <colorSpectrum>
+      <li>(0.9, 1.0, 0.9)</li>
+      <li>(0.8, 0.9, 0.8)</li>
+    </colorSpectrum>
+    <permanentEnemy>true</permanentEnemy>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+      <li>kobold</li>
+    </backstoryCategories>
+    <allowedCultures>
+      <li>Corunan</li>
+    </allowedCultures>
+    <allowedArrivalTemperatureRange>
+      <min>-50</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <!-- Ordianry group - mixed abilities. -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>90</commonality>
+        <options>
+          <KoboldFighter>20</KoboldFighter>
+          <KoboldHunter>15</KoboldHunter>
+          <KoboldGunner>8</KoboldGunner>
+          <KoboldKaboomer>5</KoboldKaboomer>
+          <KoboldKing>1</KoboldKing>
+        </options>
+      </li>
+      <!-- Uncommon group - Big boomer. -->
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <KoboldScrapper>35</KoboldScrapper>
+          <KoboldFighter>15</KoboldFighter>
+          <KoboldBigBoom>1</KoboldBigBoom>
+          <KoboldKing>1</KoboldKing>
+        </options>
+      </li>
+      <!-- Home defenders. -->
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <KoboldFighter>30</KoboldFighter>
+          <KoboldHunter>20</KoboldHunter>
+          <KoboldGunner>10</KoboldGunner>
+          <KoboldKaboomer>6</KoboldKaboomer>
+          <KoboldBigBoom>3</KoboldBigBoom>
+          <KoboldKing>1</KoboldKing>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+</Defs>

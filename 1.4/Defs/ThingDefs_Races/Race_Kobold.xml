@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============================ Kobold Base ========================== -->
+  <AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Kobold">
+    <defName>Alien_Kobold</defName>
+    <label>kobold</label>
+    <description>A kobold which has risen above it's kin to become a productive member of society. Mostly.</description>
+    <alienRace>
+      <generalSettings>
+        <immuneToAge>false</immuneToAge>
+        <forcedRaceTraitEntries>
+          <li>
+            <defName>Gay</defName>
+            <chance>20</chance>
+          </li>
+        </forcedRaceTraitEntries>
+        <alienPartGenerator>
+          <headTypes Inherit="False">
+            <li>KoboldHead</li>
+          </headTypes>
+          <bodyTypes>
+            <li>Hulk</li>
+            <li>Fat</li>
+            <li>Thin</li>
+            <li>Female</li>
+            <li>Male</li>
+          </bodyTypes>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>100</weight>
+                    <only>RGBA(0.8,0,0.1,1)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
+        </alienPartGenerator>
+        <chemicalSettings>
+        </chemicalSettings>
+        <humanRecipeImport>true</humanRecipeImport>
+      </generalSettings>
+      <graphicPaths>
+        <head>Kobold/Head/</head>
+        <body>Kobold/Body/</body>
+        <skinShader>Cutout</skinShader>
+      </graphicPaths>
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+      </styleSettings>
+      <relationSettings>
+        <relationChanceModifierChild>1</relationChanceModifierChild>
+        <relationChanceModifierExLover>1</relationChanceModifierExLover>
+        <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+        <relationChanceModifierFiance>0</relationChanceModifierFiance>
+        <relationChanceModifierLover>1</relationChanceModifierLover>
+        <relationChanceModifierParent>1</relationChanceModifierParent>
+        <relationChanceModifierSibling>1</relationChanceModifierSibling>
+        <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+      </relationSettings>
+      <thoughtSettings>
+        <cannotReceiveThoughts>
+          <li>AteLavishMeal</li>
+          <li>AteFineMeal</li>
+          <li>AteRawFood</li>
+          <li>AteKibble</li>
+          <li>AteCorpse</li>
+          <li>AteHumanlikeMeatDirect</li>
+          <li>AteHumanlikeMeatAsIngredient</li>
+          <li>AteInsectMeatDirect</li>
+          <li>AteInsectMeatAsIngredient</li>
+          <li>ButcheredHumanlikeCorpse</li>
+          <li>KnowButcheredHumanlikeCorpse</li>
+          <li>AteRottenFood</li>
+          <li>AteWithoutTable</li>
+          <li>NeedOutdoors</li>
+          <li>EnvironmentDark</li>
+          <li>HumanLeatherApparelSad</li>
+        </cannotReceiveThoughts>
+      </thoughtSettings>
+    </alienRace>
+    <statBases>
+      <Mass>60</Mass>
+      <MarketValue>400</MarketValue>
+      <MoveSpeed>4.62</MoveSpeed>
+      <Flammability>1.0</Flammability>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <LeatherAmount>25</LeatherAmount>
+    </statBases>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <baseHungerRate>1.15</baseHungerRate>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>80</lifeExpectancy>
+      <meatColor>(170, 0, 25)</meatColor>
+      <leatherDef>Leather_PlayableKobold</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>Human</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>BabyStage</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>ChildStage</def>
+          <minAge>2</minAge>
+        </li>
+        <li>
+          <def>AdultStage</def>
+          <minAge>15</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(1,0)</li>
+          <li>(10,10)</li>
+          <li>(20,60)</li>
+          <li>(40,50)</li>
+          <li>(60,30)</li>
+          <li>(70,10)</li>
+          <li>(81,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>OrganicStandard</li>
+      </hediffGiverSets>
+    </race>
+    <!-- <recipes> -->
+    <!-- <li>InstallPowerClaw</li> -->
+    <!-- <li>InstallBionicEye</li> -->
+    <!-- <li>InstallBionicArm</li> -->
+    <!-- <li>InstallBionicLeg</li> -->
+    <!-- <li>InstallSimpleProstheticArm</li> -->
+    <!-- <li>InstallSimpleProstheticLeg</li> -->
+    <!-- <li>InstallPegLeg</li> -->
+    <!-- <li>InstallDenture</li> -->
+    <!-- <li>InstallJoywire</li> -->
+    <!-- <li>InstallPainstopper</li> -->
+    <!-- <li>InstallNaturalHeart</li> -->
+    <!-- <li>InstallNaturalLung</li> -->
+    <!-- <li>InstallNaturalKidney</li> -->
+    <!-- <li>InstallNaturalLiver</li> -->
+    <!-- <li>ExciseCarcinoma</li> -->
+    <!-- <li>RemoveBodyPart</li> -->
+    <!-- <li>Euthanize</li> -->
+    <!-- </recipes> -->
+  </AlienRace.ThingDef_AlienRace>
+  <!-- ========================== Leather ========================= -->
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_PlayableKobold</defName>
+    <label>sentient kobold leather</label>
+    <description>The treated skin of a sentient kobold, difficult but not impossible to distinguish from that of their animalistic cousins.</description>
+    <graphicData>
+      <color>(100,30,30)</color>
+      <colorTwo>(100,30,30)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MarketValue>3</MarketValue>
+      <StuffPower_Armor_Sharp>0.2</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>9</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(100,30,30)</color>
+      <commonality>0.001</commonality>
+    </stuffProps>
+  </ThingDef>
+</Defs>
