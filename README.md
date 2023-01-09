@@ -39,3 +39,4 @@ RBSE Patch (Not 1.0 compatible) - http://steamcommunity.com/sharedfiles/filedeta
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2266800022]Last updated 2023-01-09
